@@ -5,6 +5,7 @@ frontend:
       commands:
         - nvm install 16
         - nvm use 16
+        - npm install --g yarn
         - yarn install
     build:
       commands:
