@@ -10,8 +10,8 @@ export async function getStaticProps(context) {
   //   the argument used for `setPreviewData`.
   return {
     props: {
-      message: context.previewData.message,
-      timestamp: context.previewData.timestamp,
+      message: context.preview ? context.previewData.message : "none",
+      timestamp: context.preview ? context.previewData.timestamp : "none",
     },
   };
 }
